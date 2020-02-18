@@ -1,0 +1,32 @@
+.breadcrumb{
+	&-list{
+		display: flex;
+		list-style: none;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+		&__item{
+			display: flex;
+			align-items: center;
+			color: #8A8A8A;
+			font-size: 16px;
+			&::after{
+				content: '';
+				display: block;
+				width: 4px;
+				height: 1px;
+				background-color: #8A8A8A;
+				margin: 0 6px;
+			}
+			&:last-child{
+				&::after{
+					display: none;
+				}
+			}
+		}
+		&__link{
+			text-decoration: none;
+			color: #8A8A8A;
+		}
+	}
+}

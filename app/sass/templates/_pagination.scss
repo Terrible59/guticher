@@ -1,0 +1,33 @@
+.pagination{
+	&-list{
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		&__item{
+			border: 1px solid #dee2e6;
+			margin-left: -1px;
+			
+			&:first-child{
+				margin-left: 0;
+			}
+			&:hover{
+				cursor: pointer;
+			}
+			&_active{
+				padding: 10px 15px;
+				background-color: $pagination_color;
+				color: #fff;
+				span, a{
+					padding: 0;
+				}
+			}
+		}
+		&__link{
+			color: #000;
+			text-decoration: none;
+			display: block;
+			padding: 10px 15px;
+		}
+	}
+}

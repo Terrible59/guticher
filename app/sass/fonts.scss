@@ -1,0 +1,63 @@
+@font-face {
+	font-family: 'Times New Roman';
+	src: url('../fonts/TimesNewRomanPSMT.eot');
+	src: local('Times New Roman'), local('TimesNewRomanPSMT'),
+		url('../fonts/TimesNewRomanPSMT.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TimesNewRomanPSMT.woff') format('woff'),
+		url('../fonts/TimesNewRomanPSMT.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Times New Roman';
+	src: url('../fonts/TimesNewRomanPS-BoldMT.eot');
+	src: local('Times New Roman Bold'), local('TimesNewRomanPS-BoldMT'),
+		url('../fonts/TimesNewRomanPS-BoldMT.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TimesNewRomanPS-BoldMT.woff') format('woff'),
+		url('../fonts/TimesNewRomanPS-BoldMT.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neutraface Text';
+    src: url('../fonts/NeutrafaceText-Bold.woff2') format('woff2'),
+        url('../fonts/NeutrafaceText-Bold.woff') format('woff'),
+        url('../fonts/NeutrafaceText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neutraface Text';
+    src: url('../fonts/NeutrafaceText-Light.woff2') format('woff2'),
+        url('../fonts/NeutrafaceText-Light.woff') format('woff'),
+        url('../fonts/NeutrafaceText-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neutraface Text Book Alt';
+    src: url('../fonts/NeutrafaceText-BookAlt.woff2') format('woff2'),
+        url('../fonts/NeutrafaceText-BookAlt.woff') format('woff'),
+        url('../fonts/NeutrafaceText-BookAlt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neutraface Text Demi';
+    src: url('../fonts/NeutrafaceText-Demi.woff2') format('woff2'),
+        url('../fonts/NeutrafaceText-Demi.woff') format('woff'),
+        url('../fonts/NeutrafaceText-Demi.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+     font-display: swap;
+}
