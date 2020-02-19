@@ -1,5 +1,54 @@
 $('input[type="tel"]').mask("+7 (999) 999-99-99");
 
+$('.popup-times').click(function(event) {
+	$('.popup').css({
+		opacity: '0',
+		visibility: 'hidden'
+	});
+});
+
+$(window).scroll(function () {
+	if($(window).scrollTop() > $(window).height()){
+		$('.header_clone').css({
+			transform: 'translateY(0)',
+		});
+	} else{
+		$('.header_clone').css({
+			transform: 'translateY(-100%)',
+		});
+	}
+});
+
+$("[data-popup]").click(function(e){
+	e.preventDefault();
+	id = $(this).attr("data-popup");
+	$("#"+id).css({
+		opacity: '1',
+		visibility: 'visible'
+	});
+});
+
+var $win = $('.popup'); // or $box parent container
+var $box = $(".popup-content");
+
+$win.on("click.Bst", function(event){		
+	if ( $box.has(event.target).length == 0 && !$box.is(event.target) ){
+		$('.popup').css({
+			opacity: '0',
+			visibility: 'hidden'
+		});
+		$('body').css({
+			overflow: 'auto'
+		});
+
+		$('.popup').find('iframe').each(function(i, el){
+			$(this).attr("src", $(this).attr("src"));
+			console.log('dd');
+		});
+
+	}
+});
+
 $('.header-menu-burger').click(function(event) {
 	$(this).toggleClass('header-menu-burger_active');
 	$(this).siblings('.header-menu').fadeToggle(800);
@@ -37,7 +86,10 @@ $('.about-slider').slick({
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
-				fade: false
+				fade: false,
+				dots: true,
+				appendDots: $('.about-content'),
+				dotsClass: 'slick-dots dots about-slider-dots',
 			}
 		},
 	]
@@ -58,8 +110,10 @@ $('.furniture-slider').slick({
 	infinite: true,
 	arrows: true,
 	appendArrows: $('.furniture-content'),
-	prevArrow: '<button type="button" class="slick-prev furniture-slider__arrow furniture-slider__arrow_left"></button>',
-	nextArrow: '<button type="button" class="slick-next furniture-slider__arrow furniture-slider__arrow_right"></button>',
+	prevArrow: 
+	'<button type="button" class="slick-prev furniture-slider__arrow furniture-slider__arrow_left"></button>',
+	nextArrow: 
+	'<button type="button" class="slick-next furniture-slider__arrow furniture-slider__arrow_right"></button>',
 	dots: false,
 	responsive: [
 		{
@@ -128,6 +182,10 @@ $('.news-slider').slick({
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
+				adaptiveHeight: true,
+				dots: true,
+				appendDots: $('.news-container'),
+				dotsClass: 'slick-dots dots news-slider-dots',
 			}
 		},
 	]

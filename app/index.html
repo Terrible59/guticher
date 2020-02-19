@@ -5,7 +5,22 @@
 	<meta name="viewport" content="width=device-width">
 	<meta name="description" content="Описание">
 	<title>Title</title>
-	<link rel="shortcut icon" href="img/icons/logo.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">  
+	<link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#212121">
+	<meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#212121">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -95,7 +110,91 @@
 		</div>
 	</div>
 </header>
-
+<header class="header header_clone">
+	<div class="header-content">
+		<div class="logo logo_header">
+			<a href="/" class="logo__link">
+				<img src="img/logo.svg" alt="logo" class="logo__img">
+			</a>
+		</div>
+		<div class="header-menu">
+			<ul class="header-menu-list">
+				<li class="header-menu-list__item">
+					<a href="#" class="header-menu-list__link">О нас</a>
+				</li>
+				<li class="header-menu-list__item">
+					<a href="#" class="header-menu-list__link">Производсво</a>
+				</li>
+				<li class="header-menu-list__item">
+					<a href="#" class="header-menu-list__link">Проекты</a>
+				</li>
+				<li class="header-menu-list__item">
+					<a href="catalog.html" class="header-menu-list__link">Каталог</a>
+					<div class="header-menu-list-arrow">
+					</div>
+					<ul class="header-menu-list-sublist">
+						<li class="header-menu-list-sublist__item">
+							<a href="#" class="header-menu-list-sublist__link">Команда</a>
+						</li>
+						<li class="header-menu-list-sublist__item">
+							<a href="#" class="header-menu-list-sublist__link">Производство</a>
+						</li>
+						<li class="header-menu-list-sublist__item">
+							<a href="#" class="header-menu-list-sublist__link">Завод</a>
+						</li>
+					</ul>
+				</li>
+				<li class="header-menu-list__item">
+					<a href="blog.html" class="header-menu-list__link">Блог</a>
+				</li>
+				<li class="header-menu-list__item">
+					<a href="#" class="header-menu-list__link">Sale</a>
+				</li>
+				<li class="header-menu-list__item">
+					<a href="contacts.html" class="header-menu-list__link">Контакты</a>
+				</li>
+			</ul>
+			<div class="header-info header-info_mobile">
+				<a href="tel:8 (800) 555-35-35" class="header-info-phone">
+					<img src="img/icons/phone.svg" alt="" class="header-info-phone__img">
+				</a>
+				<div class="social">
+					<ul class="social-list">
+						<li class="social-list__item">
+							<a href="#" target="_blank" class="social-list__link">
+								<img src="img/icons/inst.svg" alt="instagram" class="social-list__img">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="lang">
+					<a href="#" class="lang__link">en</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-info">
+			<div class="phone phone_header">
+				 <a href="tel:8 (800) 555-35-35" class="phone__link">8 (800) 555-35-35</a>
+			</div>
+			<div class="social">
+				<ul class="social-list">
+					<li class="social-list__item">
+						<a href="#" target="_blank" class="social-list__link">
+							<img src="img/icons/inst.svg" alt="instagram" class="social-list__img">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="lang">
+				<a href="#" class="lang__link">en</a>
+			</div>
+		</div>
+		<div class="header-menu-burger">
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+</header>
 <main class="main">
 	<section class="about">
 		<div class="about-content">
@@ -149,20 +248,74 @@
 				<div class="about-slider-nav">
 					<div class="about-slider-nav-slide">
 						<div class="about-slider-nav-wrapper">
+							<div class="circle">
+								<div class="circle-loader">
+									<div class="circle-loader__wrap">
+										<div class="left-wrap">
+											<div class="circle-loader-inside"></div>
+										</div>
+										<div class="right-wrap">
+											<div class="circle-loader-inside"></div>
+										</div>
+									</div>
+								</div>
+							</div>
 							<img src="img/bed.jpg" alt="furniture" class="about-slider-nav__img">
 						</div>
 						<div class="about-slider-nav__heading">Консоль MARESELLE</div>
 					</div>
 					<div class="about-slider-nav-slide">
-						<img src="img/table.jpg" alt="furniture" class="about-slider-nav__img">
+						<div class="about-slider-nav-wrapper">
+							<div class="circle">
+								<div class="circle-loader">
+									<div class="circle-loader__wrap">
+										<div class="left-wrap">
+											<div class="circle-loader-inside"></div>
+										</div>
+										<div class="right-wrap">
+											<div class="circle-loader-inside"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<img src="img/table.jpg" alt="furniture" class="about-slider-nav__img">
+						</div>
 						<div class="about-slider-nav__heading">Стол SLAB TABLE</div>
 					</div>
 					<div class="about-slider-nav-slide">
-						<img src="img/bed.jpg" alt="furniture" class="about-slider-nav__img">
+						<div class="about-slider-nav-wrapper">
+							<div class="circle">
+								<div class="circle-loader">
+									<div class="circle-loader__wrap">
+										<div class="left-wrap">
+											<div class="circle-loader-inside"></div>
+										</div>
+										<div class="right-wrap">
+											<div class="circle-loader-inside"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<img src="img/chair.jpg" alt="furniture" class="about-slider-nav__img">
+						</div>
 						<div class="about-slider-nav__heading">Стул VEGAS</div>
 					</div>
 					<div class="about-slider-nav-slide">
-						<img src="img/chair.jpg" alt="furniture" class="about-slider-nav__img">
+						<div class="about-slider-nav-wrapper">
+							<div class="circle">
+								<div class="circle-loader">
+									<div class="circle-loader__wrap">
+										<div class="left-wrap">
+											<div class="circle-loader-inside"></div>
+										</div>
+										<div class="right-wrap">
+											<div class="circle-loader-inside"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<img src="img/bed.jpg" alt="furniture" class="about-slider-nav__img">
+						</div>
 						<div class="about-slider-nav__heading">Журнальный столик RIVER</div>
 					</div>
 				</div>
@@ -174,7 +327,7 @@
 			<div class="furniture-slider">
 				<div class="furniture-slider-slide">
 					<div class="furniture-card">
-						<a href="#" class="furniture-card__link">
+						<a href="catalog.html" class="furniture-card__link">
 							<img src="img/fur/sofa.svg" alt="Диван" class="furniture-card__img">
 							<div class="furniture-card__title">Диваны</div>
 						</a>
@@ -182,89 +335,81 @@
 				</div>
 				<div class="furniture-slider-slide">
 					<div class="furniture-card">
-						<a href="#" class="furniture-card__link">
-							<img src="img/fur/sofa.svg" alt="Диван" class="furniture-card__img">
-							<div class="furniture-card__title">Диваны</div>
+						<a href="catalog.html" class="furniture-card__link">
+							<img src="img/fur/bed.svg" alt="Кровать" class="furniture-card__img">
+							<div class="furniture-card__title">Кровати</div>
 						</a>
 					</div>
 				</div>
 				<div class="furniture-slider-slide">
 					<div class="furniture-card">
-						<a href="#" class="furniture-card__link">
-							<img src="img/fur/sofa.svg" alt="Диван" class="furniture-card__img">
-							<div class="furniture-card__title">Диваны</div>
+						<a href="catalog.html" class="furniture-card__link">
+							<img src="img/fur/children.svg" alt="Детская мебель" class="furniture-card__img">
+							<div class="furniture-card__title">Детская мебель</div>
 						</a>
 					</div>
 				</div>
 				<div class="furniture-slider-slide">
 					<div class="furniture-card">
-						<a href="#" class="furniture-card__link">
-							<img src="img/fur/sofa.svg" alt="Диван" class="furniture-card__img">
-							<div class="furniture-card__title">Диваны</div>
+						<a href="catalog.html" class="furniture-card__link">
+							<img src="img/fur/armchair.svg" alt="Кресла, пуфы, банкетки" class="furniture-card__img">
+							<div class="furniture-card__title">Кресла, пуфы, банкетки</div>
 						</a>
 					</div>
 				</div>
 				<div class="furniture-slider-slide">
 					<div class="furniture-card">
-						<a href="#" class="furniture-card__link">
-							<img src="img/fur/sofa.svg" alt="Диван" class="furniture-card__img">
-							<div class="furniture-card__title">Диваны</div>
+						<a href="catalog.html" class="furniture-card__link">
+							<img src="img/fur/table.svg" alt="Столы" class="furniture-card__img">
+							<div class="furniture-card__title">Столы</div>
 						</a>
 					</div>
 				</div>
 				<div class="furniture-slider-slide">
 					<div class="furniture-card">
-						<a href="#" class="furniture-card__link">
-							<img src="img/fur/sofa.svg" alt="Диван" class="furniture-card__img">
-							<div class="furniture-card__title">Диваны</div>
+						<a href="catalog.html" class="furniture-card__link">
+							<img src="img/fur/chair.svg" alt="Стулья" class="furniture-card__img">
+							<div class="furniture-card__title">Стулья</div>
 						</a>
 					</div>
 				</div>
 				<div class="furniture-slider-slide">
 					<div class="furniture-card">
-						<a href="#" class="furniture-card__link">
-							<img src="img/fur/sofa.svg" alt="Диван" class="furniture-card__img">
-							<div class="furniture-card__title">Диваны</div>
+						<a href="catalog.html" class="furniture-card__link">
+							<img src="img/fur/kitchen.svg" alt="Кухни" class="furniture-card__img">
+							<div class="furniture-card__title">Кухни</div>
 						</a>
 					</div>
 				</div>
 				<div class="furniture-slider-slide">
 					<div class="furniture-card">
-						<a href="#" class="furniture-card__link">
-							<img src="img/fur/sofa.svg" alt="Диван" class="furniture-card__img">
-							<div class="furniture-card__title">Диваны</div>
+						<a href="catalog.html" class="furniture-card__link">
+							<img src="img/fur/wardrobe.svg" alt="Гардеробные" class="furniture-card__img">
+							<div class="furniture-card__title">Гардеробные</div>
 						</a>
 					</div>
 				</div>
 				<div class="furniture-slider-slide">
 					<div class="furniture-card">
-						<a href="#" class="furniture-card__link">
-							<img src="img/fur/sofa.svg" alt="Диван" class="furniture-card__img">
-							<div class="furniture-card__title">Диваны</div>
+						<a href="catalog.html" class="furniture-card__link">
+							<img src="img/fur/closet.svg" alt="Шкафы" class="furniture-card__img">
+							<div class="furniture-card__title">Шкафы</div>
 						</a>
 					</div>
 				</div>
 				<div class="furniture-slider-slide">
 					<div class="furniture-card">
-						<a href="#" class="furniture-card__link">
-							<img src="img/fur/sofa.svg" alt="Диван" class="furniture-card__img">
-							<div class="furniture-card__title">Диваны</div>
+						<a href="catalog.html" class="furniture-card__link">
+							<img src="img/fur/nightstand.svg" alt="Тумбочки и комоды" class="furniture-card__img">
+							<div class="furniture-card__title">Тумбочки и комоды</div>
 						</a>
 					</div>
-				</div>
+				</div> 
 				<div class="furniture-slider-slide">
 					<div class="furniture-card">
-						<a href="#" class="furniture-card__link">
-							<img src="img/fur/sofa.svg" alt="Диван" class="furniture-card__img">
-							<div class="furniture-card__title">Диваны</div>
-						</a>
-					</div>
-				</div>
-				<div class="furniture-slider-slide">
-					<div class="furniture-card">
-						<a href="#" class="furniture-card__link"> 
-							<img src="img/fur/sofa.svg" alt="Диван" class="furniture-card__img">
-							<div class="furniture-card__title">Диваны</div>
+						<a href="catalog.html" class="furniture-card__link">
+							<img src="img/fur/closet.svg" alt="Шкафы" class="furniture-card__img">
+							<div class="furniture-card__title">Шкафы</div>
 						</a>
 					</div>
 				</div>
@@ -276,107 +421,107 @@
 			<h2 class="heading heading_offset">Новинки</h2>
 			<div class="row">
 				<div class="col-lg-3 col-sm-6">
-					<div class="product-card product-card_sale" data-sale="-70%">
-						<a href="#" class="product-card__link">
-							<img src="img/product-bed.jpg" alt="Кровать" class="product-card__img">
+					<div class="product-card product-card_sale" data-sale="-70%" itemscope itemtype="http://schema.org/Product">
+						<a href="product.html" class="product-card__link">
+							<img src="img/product-bed.jpg" alt="Кровать" class="product-card__img" itemprop="image">
 						</a>
-						<div class="product-card__price">3 299 ₽ <span>10 999 ₽</span></div>
+						<div class="product-card__price" itemprop="price">3 299 ₽ <span>10 999 ₽</span></div>
 						<div class="product-card__link">
-							<div class="product-card__title">Шарм-Дизайн</div>
+							<div class="product-card__title" itemprop="name">Шарм-Дизайн</div>
 						</div>
-						<div class="product-card__size"><span>Габариты:</span> 83x83x85</div>
-						<a href="#" class="btn btn_cart">Заказать</a>
+						<div class="product-card__size" itemprop="description"><span>Габариты:</span> 83x83x85</div>
+						<a href="product.html" class="btn btn_cart">Заказать</a>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
-					<div class="product-card">
-						<a href="#" class="product-card__link">
-							<img src="img/product-bed.jpg" alt="Кровать" class="product-card__img">
+					<div class="product-card" itemscope itemtype="http://schema.org/Product">
+						<a href="product.html" class="product-card__link">
+							<img src="img/product-bed.jpg" alt="Кровать" class="product-card__img" itemprop="image">
 						</a>
-						<div class="product-card__price">3 299 ₽ <span>10 999 ₽</span></div>
+						<div class="product-card__price" itemprop="price">3 299 ₽ <span>10 999 ₽</span></div>
 						<div class="product-card__link">
-							<div class="product-card__title">Шарм-Дизайн</div>
+							<div class="product-card__title" itemprop="name">Шарм-Дизайн</div>
 						</div>
-						<div class="product-card__size"><span>Габариты:</span> 83x83x85</div>
-						<a href="#" class="btn btn_cart">Заказать</a>
+						<div class="product-card__size" itemprop="description"><span>Габариты:</span> 83x83x85</div>
+						<a href="product.html" class="btn btn_cart">Заказать</a>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
-					<div class="product-card">
-						<a href="#" class="product-card__link">
-							<img src="img/product-bed.jpg" alt="Кровать" class="product-card__img">
+					<div class="product-card" itemscope itemtype="http://schema.org/Product">
+						<a href="product.html" class="product-card__link">
+							<img src="img/product-bed.jpg" alt="Кровать" class="product-card__img" itemprop="image">
 						</a>
-						<div class="product-card__price">11 290 ₽</div>
+						<div class="product-card__price" itemprop="price">3 299 ₽ <span>10 999 ₽</span></div>
 						<div class="product-card__link">
-							<div class="product-card__title">Шарм-Дизайн</div>
+							<div class="product-card__title" itemprop="name">Шарм-Дизайн</div>
 						</div>
-						<div class="product-card__size"><span>Габариты:</span> 83x83x85</div>
-						<a href="#" class="btn btn_cart">Заказать</a>
+						<div class="product-card__size" itemprop="description"><span>Габариты:</span> 83x83x85</div>
+						<a href="product.html" class="btn btn_cart">Заказать</a>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
-					<div class="product-card">
-						<a href="#" class="product-card__link">
-							<img src="img/product-bed.jpg" alt="Кровать" class="product-card__img">
+					<div class="product-card" itemscope itemtype="http://schema.org/Product">
+						<a href="product.html" class="product-card__link">
+							<img src="img/product-bed.jpg" alt="Кровать" class="product-card__img" itemprop="image">
 						</a>
-						<div class="product-card__price">3 299 ₽ <span>10 999 ₽</span></div>
+						<div class="product-card__price" itemprop="price">3 299 ₽ <span>10 999 ₽</span></div>
 						<div class="product-card__link">
-							<div class="product-card__title">Шарм-Дизайн</div>
+							<div class="product-card__title" itemprop="name">Шарм-Дизайн</div>
 						</div>
-						<div class="product-card__size"><span>Габариты:</span> 83x83x85</div>
-						<a href="#" class="btn btn_cart">Заказать</a>
+						<div class="product-card__size" itemprop="description"><span>Габариты:</span> 83x83x85</div>
+						<a href="product.html" class="btn btn_cart">Заказать</a>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
-					<div class="product-card">
-						<a href="#" class="product-card__link">
-							<img src="img/product-bed.jpg" alt="Кровать" class="product-card__img">
+					<div class="product-card" itemscope itemtype="http://schema.org/Product">
+						<a href="product.html" class="product-card__link">
+							<img src="img/product-bed.jpg" alt="Кровать" class="product-card__img" itemprop="image">
 						</a>
-						<div class="product-card__price">3 299 ₽ <span>10 999 ₽</span></div>
+						<div class="product-card__price" itemprop="price">3 299 ₽ <span>10 999 ₽</span></div>
 						<div class="product-card__link">
-							<div class="product-card__title">Шарм-Дизайн</div>
+							<div class="product-card__title" itemprop="name">Шарм-Дизайн</div>
 						</div>
-						<div class="product-card__size"><span>Габариты:</span> 83x83x85</div>
-						<a href="#" class="btn btn_cart">Заказать</a>
+						<div class="product-card__size" itemprop="description"><span>Габариты:</span> 83x83x85</div>
+						<a href="product.html" class="btn btn_cart">Заказать</a>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
-					<div class="product-card">
-						<a href="#" class="product-card__link">
-							<img src="img/product-bed.jpg" alt="Кровать" class="product-card__img">
+					<div class="product-card" itemscope itemtype="http://schema.org/Product">
+						<a href="product.html" class="product-card__link">
+							<img src="img/product-bed.jpg" alt="Кровать" class="product-card__img" itemprop="image">
 						</a>
-						<div class="product-card__price">3 299 ₽ <span>10 999 ₽</span></div>
+						<div class="product-card__price" itemprop="price">3 299 ₽ <span>10 999 ₽</span></div>
 						<div class="product-card__link">
-							<div class="product-card__title">Шарм-Дизайн</div>
+							<div class="product-card__title" itemprop="name">Шарм-Дизайн</div>
 						</div>
-						<div class="product-card__size"><span>Габариты:</span> 83x83x85</div>
-						<a href="#" class="btn btn_cart">Заказать</a>
+						<div class="product-card__size" itemprop="description"><span>Габариты:</span> 83x83x85</div>
+						<a href="product.html" class="btn btn_cart">Заказать</a>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
-					<div class="product-card">
-						<a href="#" class="product-card__link">
-							<img src="img/product-bed.jpg" alt="Кровать" class="product-card__img">
+					<div class="product-card" itemscope itemtype="http://schema.org/Product">
+						<a href="product.html" class="product-card__link">
+							<img src="img/product-bed.jpg" alt="Кровать" class="product-card__img" itemprop="image">
 						</a>
-						<div class="product-card__price">3 299 ₽ <span>10 999 ₽</span></div>
+						<div class="product-card__price" itemprop="price">3 299 ₽ <span>10 999 ₽</span></div>
 						<div class="product-card__link">
-							<div class="product-card__title">Шарм-Дизайн</div>
+							<div class="product-card__title" itemprop="name">Шарм-Дизайн</div>
 						</div>
-						<div class="product-card__size"><span>Габариты:</span> 83x83x85</div>
-						<a href="#" class="btn btn_cart">Заказать</a>
+						<div class="product-card__size" itemprop="description"><span>Габариты:</span> 83x83x85</div>
+						<a href="product.html" class="btn btn_cart">Заказать</a>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
-					<div class="product-card">
-						<a href="#" class="product-card__link">
-							<img src="img/product-bed.jpg" alt="Кровать" class="product-card__img">
+					<div class="product-card" itemscope itemtype="http://schema.org/Product">
+						<a href="product.html" class="product-card__link">
+							<img src="img/product-bed.jpg" alt="Кровать" class="product-card__img" itemprop="image">
 						</a>
-						<div class="product-card__price">3 299 ₽ <span>10 999 ₽</span></div>
+						<div class="product-card__price" itemprop="price">3 299 ₽ <span>10 999 ₽</span></div>
 						<div class="product-card__link">
-							<div class="product-card__title">Шарм-Дизайн</div>
+							<div class="product-card__title" itemprop="name">Шарм-Дизайн</div>
 						</div>
-						<div class="product-card__size"><span>Габариты:</span> 83x83x85</div>
-						<a href="#" class="btn btn_cart">Заказать</a>
+						<div class="product-card__size" itemprop="description"><span>Габариты:</span> 83x83x85</div>
+						<a href="product.html" class="btn btn_cart">Заказать</a>
 					</div>
 				</div>
 			</div>
@@ -484,7 +629,7 @@
 		</div>
 	</section>
 	<section class="news">
-		<div class="container">
+		<div class="container news-container">
 			<h2 class="heading heading_offset">Новости</h2>
 			<div class="news-slider">
 				<div class="news-slider-slide">
@@ -539,10 +684,10 @@
 					<form class="order-form">
 						<div class="form-group">
 							<div class="form-group__item form-group__item_2">
-								<input type="text" class="input" placeholder="Имя" required="required">
+								<input type="text" class="input input_white" placeholder="Имя" required="required">
 							</div>
 							<div class="form-group__item form-group__item_2">
-								<input type="tel" class="input" placeholder="Номер телефона" required="required">
+								<input type="tel" class="input input_white" placeholder="Номер телефона" required="required">
 							</div>
 						</div>
 						<div class="form-group form-group_offset">
@@ -619,11 +764,11 @@
 				</ul>
 			</div>
 			<div class="col-lg-3 col-md-4">
-				<div class="footer-wrapper">
+				<div class="footer-wrapper" itemscope itemtype="http://schema.org/FurnitureStore">
 					<a href="#" class="btn btn_footer">Скачать мини-каталог</a>
 					<a href="#" class="btn btn_footer">Скачать каталог тканей</a>
 					<div class="phone phone_footer">
-				 		<a href="tel:8 (800) 555-35-35" class="phone__link">8 (800) 555-35-35</a>
+				 		<a href="tel:8 (800) 555-35-35" class="phone__link" itemprop="telephone">8 (800) 555-35-35</a>
 					</div>
 					<a href="#" target="_blank" class="social-list__link social-list__link_footer">
 						<img src="img/icons/inst-black.svg" alt="instagram" class="social-list__img">
