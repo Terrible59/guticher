@@ -32,14 +32,14 @@ $('.about-slider').slick({
 	accessibility: false,
 	adaptiveHeight: true,
 	responsive: [
-		{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				fade: false
-			}
-		},
+	{
+		breakpoint: 768,
+		settings: {
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			fade: false
+		}
+	},
 	]
 });
 
@@ -62,27 +62,27 @@ $('.furniture-slider').slick({
 	nextArrow: '<button type="button" class="slick-next furniture-slider__arrow furniture-slider__arrow_right"></button>',
 	dots: false,
 	responsive: [
-		{
-			breakpoint: 1600,
-			settings: {
-				slidesToShow: 8,
-				slidesToScroll: 1,
-			}
-		},
-		{
-			breakpoint: 1200,
-			settings: {
-				slidesToShow: 6,
-				slidesToScroll: 1,
-			}
-		},
-		{
-			breakpoint: 991,
-			settings: {
-				slidesToShow: 4,
-				slidesToScroll: 1,
-			}
-		},
+	{
+		breakpoint: 1600,
+		settings: {
+			slidesToShow: 8,
+			slidesToScroll: 1,
+		}
+	},
+	{
+		breakpoint: 1200,
+		settings: {
+			slidesToShow: 6,
+			slidesToScroll: 1,
+		}
+	},
+	{
+		breakpoint: 991,
+		settings: {
+			slidesToShow: 4,
+			slidesToScroll: 1,
+		}
+	},
 	]
 });
 
@@ -92,27 +92,27 @@ $('.projects-slider').slick({
 	infinite: true,
 	arrows: false,
 	responsive: [
-		{
-			breakpoint: 1600,
-			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 1,
-			}
-		},
-		{
-			breakpoint: 991,
-			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 1,
-			}
-		},
-		{
-			breakpoint: 576,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-			}
-		},
+	{
+		breakpoint: 1600,
+		settings: {
+			slidesToShow: 3,
+			slidesToScroll: 1,
+		}
+	},
+	{
+		breakpoint: 991,
+		settings: {
+			slidesToShow: 2,
+			slidesToScroll: 1,
+		}
+	},
+	{
+		breakpoint: 576,
+		settings: {
+			slidesToShow: 1,
+			slidesToScroll: 1,
+		}
+	},
 	]
 });
 
@@ -123,13 +123,13 @@ $('.news-slider').slick({
 	arrows: false,
 	dots: false,
 	responsive: [
-		{
-			breakpoint: 991,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-			}
-		},
+	{
+		breakpoint: 991,
+		settings: {
+			slidesToShow: 1,
+			slidesToScroll: 1,
+		}
+	},
 	]
 });
 
@@ -150,13 +150,13 @@ $('.single-product-slider-nav').slick({
 	asNavFor: '.single-product-slider',
 	focusOnSelect: false,
 	responsive: [
-		{
-			breakpoint: 991,
-			settings: {
-				slidesToShow: 4,
-				slidesToScroll: 1,
-			}
-		},
+	{
+		breakpoint: 991,
+		settings: {
+			slidesToShow: 4,
+			slidesToScroll: 1,
+		}
+	},
 	]
 });
 
@@ -206,3 +206,13 @@ if($('#map').length){
 		myMap.geoObjects.add(myPlacemark);
 	}
 }
+
+window.onload = function() {
+	$("[data-let]").hover(function(){
+		var letter = $("#let"+$(this).attr("data-let"));
+		letter.css("color", letter.attr("data-color"));
+	},
+	function(){
+		$("#let"+$(this).attr("data-let")).css("color", "#f5f5f5");
+	});
+};
