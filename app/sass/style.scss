@@ -78,15 +78,15 @@ a, button, input, textarea, .slick-slide{
 }
 
 .checkbox:checked + label:before {
-  	background: url("../img/icons/checked.svg") no-repeat;
-  	background-position: center;
-  	background-size: 50%;  	
+	background: url("../img/icons/checked.svg") no-repeat;
+	background-position: center;
+	background-size: 50%;  	
 }
 
 .checkbox_white:checked + label:before {
-  	background: url("../img/icons/checked-white.svg") no-repeat;
-  	background-position: center;
-  	background-size: 50%;  	
+	background: url("../img/icons/checked-white.svg") no-repeat;
+	background-position: center;
+	background-size: 50%;  	
 }
 
 .checkbox + label:hover{
@@ -620,7 +620,7 @@ a, button, input, textarea, .slick-slide{
 	transition: .3s;
 	@include media-breakpoint-up(md){
 		display: none;
-	}
+	} 
 	&_active{
 		transform: rotate(0deg);
 	}
@@ -1239,8 +1239,25 @@ a, button, input, textarea, .slick-slide{
 		font-size: 259px;
 		font-weight: bold;
 		display: flex;
-		span{
-			margin: 0 13px;
+		&_hover{
+			z-index: 3;
+			left: 50%;
+			transform: translateX(-50%);
+			top: 100px;
+			overflow: hidden;
+		}
+	}
+	&__heading-letter{
+		margin: 0 13px;
+		transition: .4s;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;
+		-ms-user-select: none;
+		&_hover{
+			color: transparent;
+			display: inline-block;
+			height: 177px;
 		}
 	}
 }
@@ -1252,6 +1269,10 @@ a, button, input, textarea, .slick-slide{
 	justify-content: space-between;
 	position: relative;
 	z-index: 2;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	-ms-user-select: none;
 	@include media-breakpoint-up(xl){
 		max-width: 1030px;
 	}
@@ -1963,7 +1984,7 @@ a, button, input, textarea, .slick-slide{
 					height: 100%;
 					top: 0;
 					left: 0;
-				background: linear-gradient(180.67deg, rgba(33, 33, 33, 0) 72.27%, #212121 105.31%, #212121 117.11%);
+					background: linear-gradient(180.67deg, rgba(33, 33, 33, 0) 72.27%, #212121 105.31%, #212121 117.11%);
 				}
 			}
 			.blog-card__img{
