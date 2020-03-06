@@ -49,48 +49,83 @@ a, button, input, textarea, .slick-slide{
 	left: 0;
 	bottom: 0;
 	opacity: 0;
+	& + label {
+		position: relative;
+		display: block; 
+		margin-left: 25px;
+		&:hover{
+			cursor: pointer;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			left: -25px;
+			top: 2px;
+			border: 1px solid #000;
+			background-color: transparent;
+			transition: .25s;
+		} 
+	} 
+	& + label.label_full::before{
+		top: -1px;
+	}
+	&:checked + label:before {
+		background: url("../img/icons/checked.svg") no-repeat;
+		background-position: center;
+		background-size: 50%;  	
+	}
+	&_white{
+		& + label::before{
+			border-color: #fff;
+		}
+		&:checked + label:before {
+			background: url("../img/icons/checked-white.svg") no-repeat;
+			background-position: center;
+			background-size: 50%;  	
+		}
+	}
 }
 
-.checkbox + label {
-	position: relative;
-	display: block; 
-	margin-left: 25px; 
-} 
-
-.checkbox + label::before {
-	content: "";
+.check {
 	position: absolute;
-	width: 15px;
-	height: 15px;
-	left: -25px;
-	top: 2px;
-	border: 1px solid #000;
-	background-color: transparent;
-	transition: .25s;
-}
-
-.checkbox + label.label_full::before {
-	top: -1px;
-}
-
-.checkbox_white + label::before{
-	border-color: #fff;
-}
-
-.checkbox:checked + label:before {
-	background: url("../img/icons/checked.svg") no-repeat;
-	background-position: center;
-	background-size: 50%;  	
-}
-
-.checkbox_white:checked + label:before {
-	background: url("../img/icons/checked-white.svg") no-repeat;
-	background-position: center;
-	background-size: 50%;  	
-}
-
-.checkbox + label:hover{
-	cursor: pointer;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	& + label {
+		position: relative;
+		display: block; 
+		margin-left: 25px;
+		&:hover{
+			cursor: pointer;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			left: -25px;
+			top: 2px;
+			border: 1px solid #000;
+			background-color: transparent;
+			transition: .25s;
+			background: url("../img/icons/checked.svg") no-repeat;
+			background-position: center;
+			background-size: 50%;  
+		} 
+	} 
+	& + label.label_full::before{
+		top: -1px;
+	}
+	&_white{
+		& + label::before{
+			border-color: #fff;
+			background: url("../img/icons/checked-white.svg") no-repeat;
+			background-position: center;
+			background-size: 50%;  	
+		}
+	}
 }
 
 .input{
@@ -161,6 +196,27 @@ a, button, input, textarea, .slick-slide{
 				margin: 0;
 			}
 		}    
+	}
+}
+
+.form-otb{ 
+	width: 100%;
+	padding: 8px 12px;
+	// display: none;
+	margin-top: 12px;
+	p{
+		margin: 0;
+		font-size: 15px;
+		color: #fff;
+		@include media-breakpoint-down(xs){
+			text-align: center;
+		}
+	}
+	&_success{
+		background-color: #0085D9;
+	}
+	&_fail{
+		background-color: #e53026;
 	}
 }
 
@@ -919,7 +975,7 @@ a, button, input, textarea, .slick-slide{
 		padding-left: 80px;
 	}
 	@include media-breakpoint-up(xl){
-		margin-top: 160px;
+		margin-top: 120px; 
 	}
 	@include media-breakpoint-up(xxl){
 		margin-top: 280px;
@@ -1236,13 +1292,16 @@ a, button, input, textarea, .slick-slide{
 		transform: translate(-50%, -50%);
 		color: #f5f5f5;
 		z-index: 1;
-		font-size: 259px;
+		font-size: 200px;
 		font-weight: bold;
 		display: flex;
+		@include media-breakpoint-up(xxl){
+			font-size: 259px;
+		}
 		&_hover{
 			z-index: 3;
 			left: 50%;
-			transform: translateX(-50%);
+			transform: translate(-50%, -50%);
 			top: 100px;
 			overflow: hidden;
 		}
@@ -1582,13 +1641,16 @@ a, button, input, textarea, .slick-slide{
 	background-color: #212121;
 	@include media-breakpoint-up(lg){
 		background-image: url('../img/order-bg.jpg');
-		background-size: 65%;
+		background-size: 68%;
 		background-position: left center;
 		background-repeat: no-repeat;
 		padding: 55px 0;
 		background-color: transparent;
 	}
 	@include media-breakpoint-up(xl){
+		background-size: 60%;
+	}
+	@include media-breakpoint-up(xxl){
 		background-size: 50%;
 	}
 	&::before{
@@ -2327,6 +2389,9 @@ a, button, input, textarea, .slick-slide{
 		position: relative;
 		margin-bottom: 15px;
 		display: flex;
+		&:last-of-type{
+			margin-bottom: 0;
+		}
 		&::before{
 			counter-increment: list;
 			content: counter(list);
